@@ -8,6 +8,7 @@
 #include <math.h>
 #include <algorithm>
 
+
 typedef unsigned long long ull;
 
 #define HASH_MAX (0xFFFFFFFF)
@@ -17,7 +18,7 @@ class BF
 	int n, m, k;
 	int cell_num;
 	ull * bitarray;
-	BOBHash32 * bobhash[20];
+	BOBHash32 * bobhash[60];
 
 
 public:
@@ -50,9 +51,9 @@ public:
 BF::BF()
 {
 	bitarray = NULL;
-	for(int i = 0; i < 20; i++)
+	for(int i = 0; i < 60; i++)
 	{
-		bobhash[i] = new BOBHash32(256 + 31 * i);
+		bobhash[i] = new BOBHash32(469 + 1* i);
 	}
 }
 

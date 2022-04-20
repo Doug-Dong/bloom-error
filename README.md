@@ -26,8 +26,9 @@ Suppose you've already cloned the respository and start from the `bfcode` direct
 You just need:
 
 	$ make
-	$ ./main
+	$ ./main {your dataset}
 
+Choices for dataset: "net", "dc", "syn"
 
 ## Output format
 
